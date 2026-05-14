@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD Usuários</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="152760.png">
+
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <main class="container">
+
         <header class="header">
             <h1>Cadastro de Usuários</h1>
         </header>
@@ -35,6 +43,7 @@
         <section class="ordenarSection">
 
             <label for="ordenacao">Ordenar usuários:</label>
+
             <select id="ordenacao">
                 <option value="az">Ordem alfabética (A-Z)</option>
                 <option value="novo">Mais recente</option>
@@ -46,12 +55,15 @@
         <section class="listaSection">
 
             <h2>Usuários cadastrados</h2>
-            <p id="mensagemVazia">Nenhum usuário cadastrado.</p>
+
+            <p id="mensagemVazia">
+                Nenhum usuário cadastrado.
+            </p>
+
             <ul id="lista"></ul>
 
         </section>
 
     </main>
-
 </body>
 </html>
