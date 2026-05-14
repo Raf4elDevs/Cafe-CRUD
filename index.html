@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Usuários</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Cadastro de Usuários</h1>
+        </header>
+
+        <section class="formSection">
+
+            <h2>Novo usuário</h2>
+
+            <div class="inputs">
+                <input type="text" id="nome" placeholder="Nome completo">
+                <input type="number" id="idade" placeholder="Idade">
+                <input type="email" id="email" placeholder="Email">
+                <input type="text" id="Id" placeholder="ID (8 dígitos)">
+            </div>
+
+            <div class="botoes">
+                <button id="btnSalvar">Salvar usuário</button>
+                <button id="btnLimpar">Limpar lista</button>
+            </div>
+
+        </section>
+
+        <section class="ordenarSection">
+
+            <label for="ordenacao">Ordenar usuários:</label>
+            <select id="ordenacao">
+                <option value="az">Ordem alfabética (A-Z)</option>
+                <option value="novo">Mais recente</option>
+                <option value="antigo">Mais antigo</option>
+            </select>
+
+        </section>
+
+        <section class="listaSection">
+
+            <h2>Usuários cadastrados</h2>
+            <p id="mensagemVazia">Nenhum usuário cadastrado.</p>
+            <ul id="lista"></ul>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

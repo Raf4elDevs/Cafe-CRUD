@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* FUNDO */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+
+    background:url('./back1.jpg') center/cover fixed;
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: rgb(185, 166, 147);
+}
+
+/* CONTAINER */
+.container {
+    width: 50%;
+    max-width: 650px;
+    background: rgba(105, 74, 38, 0.75);
+    border-radius: 15px;
+    padding: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #e2c9b3;
+}
+
+/* SEÇÕES */
+.formSection,
+.ordenarSection,
+.listaSection {
+    background: rgb(59, 34, 10);
+    border: 1px solid #e2c9b3;
+
+    padding: 15px;
+    border-radius: 12px;
+
+    margin-bottom: 15px;
+}
+
+/* INPUTS */
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+    color: #5f432c;
+
+}
+
+input,
+select {
+    padding: 10px;
+    border-radius: 8px;
+    color: #5f432c;
+    border: 1px solid #d6b8a0;
+    outline: none;
+
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus {
+    border-color: #8b5e3c;
+}
+
+/* BOTÕES */
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* BOTÃO SALVAR */
+#btnSalvar {
+    flex: 1;
+
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+
+    background: #7a5a3a;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#btnSalvar:hover {
+    background: #5f432c;
+}
+
+/* BOTÃO LIMPAR */
+#btnLimpar {
+    flex: 1;
+
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+
+    background: #c85a4a;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#btnLimpar:hover {
+    background: #a94438;
+}
+
+/* ORDENAR */
+.ordenarSection label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgb(185, 166, 147);
+}
+
+/* LISTA */
+#lista {
+    list-style: none;
+    margin-top: 10px;
+}
+
+/* ITEM DA LISTA */
+#lista li {
+    background: #fffdf9;
+    border: 1px solid #e2c9b3;
+
+    padding: 12px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* BOTÕES DA LISTA */
+#lista button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    margin-left: 5px;
+
+    font-size: 12px;
+}
+
+/* EDITAR */
+#lista button:first-of-type {
+    background: #8b6a45;
+    color: white;
+}
+
+/* REMOVER */
+#lista button:last-of-type {
+    background: #c85a4a;
+    color: white;
+}
+
+/* HOVER LISTA */
+#lista li:hover {
+    background: #fff6ee;
+}
+
+/* TEXTO VAZIO */
+#mensagemVazia {
+    text-align: center;
+    color: #7a5a45;
+    margin-top: 10px;
+}
+
