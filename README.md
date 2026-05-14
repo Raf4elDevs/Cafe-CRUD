@@ -27,8 +27,8 @@ Fundo com imagem temática de café
     📂 Estrutura do projeto
 
 /projeto
-│
-├── index.html
-├── style.css
-├── script.js
-└── cafe-bg.jpg
+ │
+ ├── index.html
+ ├── style.css
+ ├── script.js
+ └── cafe-bg.jpg
