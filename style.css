@@ -12,7 +12,7 @@ body {
     justify-content: center;
     padding: 30px 15px;
 
-    background:url('./back1.jpg') center/cover fixed;
+    background:url('./back1.png');
 
     background-size: cover;
     background-position: center;
